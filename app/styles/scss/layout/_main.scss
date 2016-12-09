@@ -1,10 +1,14 @@
 $br: 5px;
 $border: 1px solid #ccc;
-* { box-sizing: border-box } 
-img {
 
+* {
+	box-sizing: border-box;
+}
+
+img {
 	max-width: 100%;
 }
+
 .group:after {
 	content: "";
 	display: table;
@@ -13,15 +17,15 @@ img {
 
 .button {
 	background-color: #fff;
-	border:$border;
+	border: $border;
 	border-radius: $br;
 	border-style: solid;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	color: #000;
+	color: #333;
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1rem;
 	font-smoothing: subpixel-antialiased;
 	font-weight: 300;
@@ -36,9 +40,9 @@ img {
 	width: 100%;
 }
 
-
 header {
 	background: white;
+
 	/*@extend group;*/
 	border-top: 5px solid #333;
 	padding: 1em 0;
@@ -46,16 +50,20 @@ header {
 
 body {
 	background: #D6F7CC;
-	color:#333;
+	color: #333;
 }
 
 .fence {
 	max-width: 960px;
 	margin: 0 auto;
+
 	/*display: flex;*/
 	/*justify-content: space-between;*/
 }
-
+.logo {
+	margin-top:6px;
+	
+}
 .upei_logo {
 	margin-top: 10px;
 	float: right;
@@ -78,47 +86,84 @@ nav {
 		padding: 10px;
 	}
 }
-a.button {
-    display: inline-block;
+
+.button {
+	display: inline-block;
 }
 
-a.button.contact {
-    float: right;
-    width: 151px;
+.button.contact {
+	float: right;
+	width: 151px;
+	margin-left: 10px;
 }
 
-a.button.about {
-    float: right;
-    width: 261px;
+.button.about {
+	float: right;
+	width: 261px;
 }
 
-a.button.purchase {
-    float: left;
-    width: 200px;
+.button.purchase {
+	float: left;
+	width: 200px;
+}
+
+.button.purchase.centered {
+	float: none;
+	display: block;
+	margin: 0 auto;
+	background-color: #2698F2;
+	background-image: url(../images/bg_add_to_cart.png);
+	background-position: 90% 50%;
+	background-repeat: no-repeat;
+	border: 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border-radius: 8px;
+	color: #ffffff !important;
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-left: 100px;
+	padding: 10px 50px 10px 10px;
+}
+.pullquote {
+	    border-left: 2px solid #9d1723;
+		    padding-left: 20px;
+			    margin: 35px 0 35px 0;
+				    font-family: "Bitter", serif;
+					    font-weight: 700;
+						    letter-spacing: 0;
+	
 }
 .content {
 	background: #fff;
-	padding:1em;
+	padding: 1em;
 	border: $border;
-	border-radius:$br;
+	border-radius: $br;
+	margin-bottom: 2em;
+
 	ul {
-	margin-left: 2em;
+		margin-left: 2em;
 	}
-img {
-padding: 4px;
-border: $border;
-border-radius: $br;
-margin-bottom: 1em;
+
+	img {
+		padding: 4px;
+		border: $border;
+		border-radius: $br;
+		margin-bottom: 1em;
+	}
 }
-	
-}
+
 .left {
 	width: 50%;
-	float:left;
+	float: left;
 	padding-right: 1em;
 }
+
 .right {
-width:50%;
-float: right;
-padding-left: 1em;
+	width: 50%;
+	float: right;
+	padding-left: 1em;
 }

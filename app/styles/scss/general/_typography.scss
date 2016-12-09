@@ -13,6 +13,8 @@ html {
 }
 
 body {
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
