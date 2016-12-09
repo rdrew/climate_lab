@@ -1,1 +1,19 @@
 // Add your settings here
+
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+$br: 5px;
+$border: 1px solid #ccc;

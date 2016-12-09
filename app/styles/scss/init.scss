@@ -1,3 +1,4 @@
+@import 'shelves/scss/shelves-grid';
 //misc settings
 @import 'config/_settings';
 @import 'config/_mixins';
@@ -6,7 +7,8 @@
 
 //global things
 @import 'general/_reset';
-@import 'general/_typography.scss';
+@import 'general/_typography';
+@import 'general/_buttons';
 @import 'layout/_main';
 
 //pages
